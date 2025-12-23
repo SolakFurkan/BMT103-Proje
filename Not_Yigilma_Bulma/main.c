@@ -12,18 +12,13 @@ int main() {
     int frekans [101]={0};
     int modNot=-1;
     int maxSiklik=0;
-    //Her bilgisayarda çalıştırmak için ogrenci.dot dosyası C:\Users\<kullanıcıadı> içine atılmalı
-    //Kullanıcının masaüstü yolunu alma
-    char dosyaYolu[256];
-    char *userProfile=getenv("USERPROFILE"); //Kullanıcı adını almak için
-    if (userProfile == NULL) {
-        printf("Kullanici adi bulunamadi\n");
-        return 1;
-    }
-    //Kullanıcı ve masaüstü yolunu birleştirme
-    sprintf(dosyaYolu,"%s\\ogrenci.dat",userProfile);
-    printf("Dosya araniyor:%s\n",dosyaYolu);
-    dosya=fopen(dosyaYolu,"r");
+
+
+    /*Kullanıcı kendi ogrenci.dat dosyasını çalıştıracaksa cmake-build-debug
+    dosyasındaki dosya yerine kendi ogrenci.dat dosyasını koymalı
+    ogrenci.dat dosyası formatı "ogrencino numara\n" şeklinde olmalıdır*/
+
+    dosya=fopen("ogrenci.dat","r");
     if (dosya==NULL) {
         printf("Kullanici adi bulunamadi\n");
         return 1;
