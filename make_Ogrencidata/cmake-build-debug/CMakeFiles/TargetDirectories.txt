@@ -1,0 +1,3 @@
+C:/Users/14fur/CLionProjects/make_Ogrencidata/cmake-build-debug/CMakeFiles/make_Ogrencidata.dir
+C:/Users/14fur/CLionProjects/make_Ogrencidata/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/14fur/CLionProjects/make_Ogrencidata/cmake-build-debug/CMakeFiles/rebuild_cache.dir
